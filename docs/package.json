@@ -5,9 +5,12 @@
   "homepage": "https://microsoft.github.io/pxt-bluetooth-designer/",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "gulp": "^3.9.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts-ts": "3.1.0"
+    "react-scripts-ts": "3.1.0",
+    "semantic-ui": "^2.4.2",
+    "semantic-ui-react": "^0.83.0"
   },
   "scripts": {
     "start": "react-scripts-ts start",

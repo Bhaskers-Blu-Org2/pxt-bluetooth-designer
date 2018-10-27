@@ -3,6 +3,7 @@ import * as ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
+import './semantic/dist/semantic.min.css';
 
 ReactDOM.render(
   <App />,
