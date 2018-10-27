@@ -58,17 +58,15 @@ class UUIDInput extends React.Component<UUIDProps, UUIDState> {
 
   render() {
     const { uuid } = this.state;
-    return <div>
-      <Input
+    return <Input
         fluid
         error={!!uuid && !this.isUUID(uuid)}
         label="service uuid"
         placeholder='aaaaaaaa-aaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa'
         value={uuid}
         onChange={this.onChange}
+        action={<Button icon='magic' onClick={this.onGenerate} />}
       />
-      <Button content="Generate" />
-    </div>;
   }
 }
 
