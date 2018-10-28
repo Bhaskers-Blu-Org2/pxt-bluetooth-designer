@@ -15,14 +15,20 @@ function isUUID(uuid) {
 $(function() {
     const input = $('#input');
     const output = $('#output');
+    const uuidbtn = $('#uuidbtn')
+    const uuidinput = $('#uuidinput')
 
-    input.change(() => {
+    uuidbtn.click(function() {
+        uuidinput.val(genUUID());
+    })
+
+    input.keyup(() => {
         const src = input.val();
         try {
             const json = JSON.parse(src);
-            output.value(JSON.stringify(json, null, 2));
+            output.text(JSON.stringify(json, null, 2));
         } catch(e) {
-            output.value(`invalid json`);
+            output.text(`invalid json`);
         }
     })
 })

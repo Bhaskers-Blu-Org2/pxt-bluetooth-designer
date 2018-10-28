@@ -3,18 +3,35 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q="
         crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI="
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <style>
+#input {
+    width: 100%;
+    min-height: 20rem;
+    font-family: monospace;
+}
+    </style>
 </head>
 
 <body>
-    <div class="ui segment">
-        <textarea id="input"></textarea>
-    </div>
-    <div class="ui segment">
-        <pre id="output"></pre>        
-    </div>
+    <div class="ui container">
+        <h1>Bluetooth service designer</h1>
+        <div class="ui segment">
+            <textarea class="ui fluid" id="input"></textarea>
+        </div>
+        <div class="ui segment">
+            <pre id="output"></pre>
+        </div>
+        <div class="ui segment">
+            <label class="ui label">uuid</label>
+            <input class="ui input" type="type" id="uuidinput" />
+            <button class="ui button" id="uuidbtn">generate</button>
+        </div>
+    </div>    
 </body>
 
 </html>
